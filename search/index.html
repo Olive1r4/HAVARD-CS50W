@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
         <style>
-            body {
+            div {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -54,12 +56,19 @@
                 border: 1px solid #bcbdbe;
             }
         </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <img class="logo" src="logo_google.png" alt="Logo">
-        <form action="https://google.com/search" method="get">
-            <input type="text" name="q" placeholder="Search on Google or enter a URL">
-            <button type="submit">Google Search</button>
-        </form>
+        <nav class="nav">
+            <a href="image_search.html">Image Search</a>
+            <a href="advanced_search.html">Advanced Search</a>
+        </nav>
+        <div>
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="300">
+            <form action="https://google.com/search" method="get">
+                <input type="text" name="q" placeholder="Search on Google or enter a URL">
+                <button type="submit">Google Search</button>
+            </form>
+        </div>
     </body>
 </html>
