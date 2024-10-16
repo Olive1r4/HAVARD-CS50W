@@ -2,6 +2,17 @@
     margin-right: 20px;
 }
 
+.nav {
+    margin-top: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 0;
+}
+
 .logo {
     margin-bottom: 20px;
 }
@@ -54,4 +65,7 @@
 .but[type="submit"]:hover {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     border: 1px solid #bcbdbe;
+}
+body {
+    margin: 0;
 }
