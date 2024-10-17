@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Search</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav class="nav">
-            <a href="image_search.html">Image Search</a>
-            <a href="advanced_search.html">Advanced Search</a>
-        </nav>
-        <div class="d">
-            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="300">
-            <form class="f" action="https://google.com/search" method="get">
-                <input class="inp" type="text" name="q" placeholder="Search on Google or enter a URL">
-                <button class="but" type="submit">Google Search</button>
-            </form>
-        </div>
-    </body>
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="image.html">Image Search</a> |
+        <a href="advanced.html">Advanced Search</a>
+    </nav>
+
+    <div class="d">
+        <img src="google_logo.png" alt="Google Logo" class="logo"> 
+
+        <form action="https://www.google.com/search" class="f" method="get">
+            <input type="text" name="q" class="inp" placeholder="Search Google">
+            <br>
+            <input type="submit" value="Google Search" class="but">
+            <input type="submit" value="I'm Feeling Lucky" class="but" name="btnI">
+        </form>
+    </div>
+</body>
 </html>

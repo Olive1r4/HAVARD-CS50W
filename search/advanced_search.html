@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Advanced Search</title>
-    </head>
-        <link rel="stylesheet" href="style.css">
-    <body>
-        <nav class="nav">
-            <a href="index.html">Search</a>
-            <a href="image_search.html">Advanced Search</a>
-        </nav>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html">Google Search</a>
+    </nav>
+
+    <div class="d">
+        <img src="google_logo.png" alt="Google Logo" class="logo"> 
+
+        <form action="https://www.google.com/search" class="f" method="get">
+            <label for="all">Find pages with... <b>all</b> of these words:</label><br>
+            <input type="text" id="all" name="as_q" class="inp"><br><br>
+
+            <label for="exact">Find pages with... <b>this exact word or phrase:</b></label><br>
+            <input type="text" id="exact" name="as_epq" class="inp"><br><br>
+
+            <label for="any">Find pages with... <b>any</b> of these words:</label><br>
+            <input type="text" id="any" name="as_oq" class="inp"><br><br>
+
+            <label for="none">Find pages with... <b>none</b> of these words:</label><br>
+            <input type="text" id="none" name="as_eq" class="inp"><br><br>
+
+            <input type="submit" value="Advanced Search" class="but" style="background-color: #4285f4; color: white;"> 
+        </form>
+    </div>
+</body>
 </html>

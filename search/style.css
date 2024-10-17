@@ -1,5 +1,17 @@
-.nav a{
-    margin-right: 20px;
+.nav {
+    background-color: #f1f2f7; /* Use a light gray color */
+    padding: 10px 20px; /* Add some padding */
+    width: 100%; /* Make the navbar take full width */
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Position it at the very top */
+    left: 0; /* Position it from the left edge */
+    z-index: 100; /* Ensure the navbar stays on top of other elements */
+    display: flex;
+    justify-content: right; /* Align items to the right */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.nav a {
+    margin-left: 5px;
 }
 
 .logo {
@@ -39,7 +51,7 @@
     border-radius: 24px;
 }
 .inp[type="text"]:hover {
-    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.5);
     border: 1px solid #bcbdbe;
 }
 
@@ -54,4 +66,8 @@
 .but[type="submit"]:hover {
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     border: 1px solid #bcbdbe;
+}
+
+.f label {
+    margin-bottom: 5px; 
 }
